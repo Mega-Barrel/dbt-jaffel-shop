@@ -7,7 +7,7 @@ The raw data consists of customers, orders, and payments, with the following ent
 
 ![image](assets/dbt-dag-lineage.png)
 
-### Running this project
+### Project Initialization
 To get up and running with this project:
 1. Install dbt using [these instructions](https://docs.getdbt.com/docs/installation).
 
