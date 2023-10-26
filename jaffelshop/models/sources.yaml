@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: jaffel_shop
+    schema: raw
+    tables:
+      - name: payment
+        identifier: payment
+        columns:
+          - name: id
+          - name: orderid
+          - name: paymentmethod
+          - name: status
+          - name: amount
+          - name: created
+          - name: _batched_at
+
+      - name: order
+        identifier: orders
+        columns:
+          - name: id
+          - name: user_id
+          - name: order_date
+          - name: status
+          - name: _etl_loaded_at
+      
+      - name: customer
+        identifier: customers
+        columns:
+          - name: id
+          - name: first_name
+          - name: last_name
